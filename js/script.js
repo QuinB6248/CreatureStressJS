@@ -66,7 +66,7 @@ function animateScriptStress () {
   }, 43)
 }
 
-
+TweenMax.to(".stresslevelimage", 2, {left:'100%'})
 
 
 
