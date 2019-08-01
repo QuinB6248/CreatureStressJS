@@ -66,11 +66,17 @@ function animateScriptStress () {
   }, 43)
 }
 
-TweenMax.to(".stresslevelimage", 2, {left:'100%'})
+TweenMax.to(".button1  ", 0.08, {left:"20px", repeat:5000, yoyo:true})
+TweenMax.to(".button1a", 0.1, {backgroundColor:"red"})
+//  const flickering = ()  => {
+//   TweenLite.fromTo('.button1 .button', 1, {backgroundColor:"red"}, {backgroundColor:"white"})
+//  }
+
+// TweenMax.staggerTo([".button1", ".button2", ".button3", ".button4"], 1, 
+//   {scale:0.2, opacity:0.3}, 0.25);
 
 
-
-
+// setTimeout(flickering, 3000);
 
 
 

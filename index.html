@@ -1,39 +1,48 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/style.css">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">Creature Stress</header>
     
-  <body >
-    <div class="wrapper">
-      <header class="header">Creature Stress</header>
-        <div class="main">
-          <div >
-            <div id="image-sprite"  ></div>                           
-          </div>
-        </div>
-        <div class="aside aside-1">
-          <div class="stresslevel">stresslevel</div>
-          <div class="stresslevelimagebox" >
-            <img class="stresslevelimage" src='./img/graph.png' width='100px'/>
-          </div>
-        </div>
-        <footer class="footer">
-          <button onclick="animateScriptWalking()" id='button1'>START</button>
-          <button onclick="animateScriptCalm()" class='button'>CALM</button>
-          <button onclick="animateScriptWorry()"class='button'>STRESSY</button>
-          <button onclick="animateScriptStress()" class='button'>AAARGH</button>
-        </footer>
+    <div class="aside">
+      <div class="stresslevel">stresslevel</div>
+      <div class="stresslevelimagebox">
+        <img class="stresslevelimage" src='./img/graph.png' width='150px' />
       </div>
+    </div>
+    <div class="main">
+        <div>
+          <div id="image-sprite"></div>
+        </div>
+      </div>
+    <footer class="footer">
+      <div class="button1">
+        <button onclick="animateScriptStress()" class='button button1a'>AAARGH</button>
+      </div>
+      <div class="button2">
+        <button onclick="animateScriptWorry()" class='button'>STRESSY</button>
+      </div>
+      <div class="button3">
+        <button onclick="animateScriptCalm()" class='button'>CALM</button></div>
+      <div class="button4">
+        <button onclick="animateScriptWalking()" class='button'>START</button>
+      </div>
+    </footer>
+  </div>
 
-       
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-      <script src="js/script.js"></script>
-    </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
 
 </html>

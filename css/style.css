@@ -36,9 +36,13 @@ body {
   
 .footer {
   background:white;
+  position: relative;
+  height: 100%;
+  width: 100%;
 }
   
 .main {
+  flex-grow:2;
   text-align: left;
   background:url('../img/Skieblur.png');
   background-position: center;
@@ -52,44 +56,54 @@ body {
   transition: ease-in-out;
   transform: scale(1);
 }
-.aside-1 {
+.aside {
   background: white;
-}
-  
-.stresslevelimagebox {
-  
- 
-  
   position: relative;
-    height: 100px;
-    width: 100%;
-    display: block;
+}
+
+.stresslevel {
+  margin-top:50px;
+  font-size:4rem;
+
+}
+.stresslevelimagebox {
+  height: 100%;
+  width: 100%;
 } 
 .stresslevelimage {
-  
-  position: absolute;
-  
+  margin-top:50px;
   left: 0;
-  margin-left:-100px;
+  margin-left:0px;
 } 
 
-.button {
-  background-color: white;
-  color: black;
-  border: 2px solid #555555;
-  border-radius: 30%;
-  padding: 16px 32px;
-  text-align: center;
-  font-family: 'Indie Flower', cursive;
-  display: inline-block;
-  font-size: 20px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
+.footer div{
+  position: relative;
+  width: 170px;
+  height: 100px;
+  float: right;
+  margin: 20px;
+}
+.footer::after{
+  clear: both;
+  display: block;
 }
 
-#button1 {
-  background-color: white;
+.button1{
+  left:0px;
+  
+}
+.button2{
+  left:0px;
+}
+.button3{
+  left:0px;
+}
+.button4{
+  left:0px;
+} 
+.button {
+  
+  /* background-color: white; */
   color: black;
   border: 2px solid #555555;
   border-radius: 30%;
@@ -101,19 +115,26 @@ body {
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
+  position: absolute; 
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  /* left: -100px; */
+}
+
+.button1a {
+
 }
  
-.button:hover {
+/* .button:hover {
   background-color: #555555;
   color: white;
-}
+} */
   
 @media all and (min-width: 400px) {
-  .aside   { flex: 1 0 0; }
+  .aside   { flex: 1 0; }
   .main    { flex: 3 0px; }
-  .main    { order: 1; }
-  .aside-1 { order: 2; } 
- 
+  .main    { order: 2; }
   .footer  { order: 3; }
 }
  
