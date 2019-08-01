@@ -5,96 +5,90 @@
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    box-sizing: border-box;
-    font-family: 'Indie Flower', cursive;
-    font-weight: 200;    
-    line-height: 1.7;
-    color: black; 
-    position: relative;
+  box-sizing: border-box;
+  font-family: 'Indie Flower', cursive;
+  font-weight: 200;    
+  line-height: 1.7;
+  color: black; 
+  position: relative;
 }
  
-
-
 .wrapper {
-    display: flex;  
-    flex-flow: row wrap;
-    font-weight: bold;
-    font-size: 7rem;
-    text-align: center;
-  }
-  
-  .wrapper > * {
-    padding: 10px;
-    flex: 1 100%;
-  }
-  
-  .header {
-    background:white;
-  }
-  
-  .footer {
-    background:white;
-  }
-  
-  .main {
-    text-align: left;
-    background:url('../img/Skieblur.png');
-    
-    background-position: center;
-    background-size: cover;
-  }
-  #image-sprite {    
-    height: 750px;
-    width: 750px;
-    background: url("../img/calmer_sprite.png") 0px 0px;
-    transition: ease-in-out;
-    transform: scale(1);
+  display: flex;  
+  flex-flow: row wrap;
+  font-weight: bold;
+  font-size: 7rem;
+  text-align: center;
 }
-  .aside-1 {
-    background: white;
-  }
   
-  .stresslevelimage {
-    max-width:50%;
-    height:auto;
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
   
-    /* background: url("../img/graph.png") 0px 0px;
-    background-position: center;
-    background-size: cover;*/
-  } 
+.header {
+  background:white;
+}
+  
+.footer {
+  background:white;
+}
+  
+.main {
+  text-align: left;
+  background:url('../img/Skieblur.png');
+  background-position: center;
+  background-size: cover;
+}
 
-  .button {
-    background-color: white;
-    color: black;
-    border: 2px solid #555555;
-    border-radius: 30%;
-    padding: 16px 32px;
-    text-align: center;
-    font-family: 'Indie Flower', cursive;
-    display: inline-block;
-    font-size: 20px;
-    margin: 4px 2px;
-   
-    transition-duration: 0.4s;
-    cursor: pointer;
-  }
+#image-sprite {    
+  height: 750px;
+  width: 750px;
+  background: url("../img/calmer_sprite.png") 0px 0px;
+  transition: ease-in-out;
+  transform: scale(1);
+}
+.aside-1 {
+  background: white;
+}
+  
+.stresslevelimage {
+  max-width:50%;
+  height:auto;
+  /* background: url("../img/graph.png") 0px 0px;
+  background-position: center;
+  background-size: cover;*/
+} 
+
+.button {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+  border-radius: 30%;
+  padding: 16px 32px;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
  
+.button:hover {
+  background-color: #555555;
+  color: white;
+}
   
-  .button:hover {
-    background-color: #555555;
-    color: white;
-  }
-  
-  @media all and (min-width: 400px) {
-    .aside { flex: 1 0 0; }
-    .main    { flex: 3 0px; }
-    .aside-1 { order: 1; } 
-    .main    { order: 2; }
-   
-    .footer  { order: 3; }
-  }
+@media all and (min-width: 400px) {
+  .aside { flex: 1 0 0; }
+  .main    { flex: 3 0px; }
+  .aside-1 { order: 1; } 
+  .main    { order: 2; }
+  .footer  { order: 3; }
+}
  
