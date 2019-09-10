@@ -66,8 +66,19 @@ function animateScriptStress () {
   }, 43)
 }
 
-TweenMax.to(".button1  ", 0.08, {left:"20px", repeat:5000, yoyo:true})
-TweenMax.to(".button1a", 0.1, {backgroundColor:"red"})
+function test() {
+  var tl = new TweenLite({repeat:10});
+  tl.fromTo("button1a", 1, {backgroundColor: 'black'},  {backgroundColor: 'white'})
+  return tl;
+  }
+
+//TweenLite.fromTo(".button1a  ", 1, {backgroundColor:"#e48282"}, {backgroundColor:"#feae81"});
+  TweenMax.from(".button1  ", 0.05, {left:"10px", repeat:5000, yoyo:true})
+  TweenMax.to(".button1a", 0.1, {backgroundColor:"#e48282"})
+  TweenMax.from(".button2  ", 0.05, {top:"2px", repeat:5000, yoyo:true})
+  TweenMax.to(".button2a", 0.1, {backgroundColor:"#feae81"})
+  TweenMax.from(".button3  ", 2, {left:"0px", repeat:5000, yoyo:true})
+  TweenMax.to(".button3a", 0.1, {backgroundColor:"#b6d38c"})
 //  const flickering = ()  => {
 //   TweenLite.fromTo('.button1 .button', 1, {backgroundColor:"red"}, {backgroundColor:"white"})
 //  }
